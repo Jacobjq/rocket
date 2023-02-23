@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Rocket League tutorials</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#tutorials">Tutorials</a>
+        <a href="#decals">Decals</a>
+        <a href="https://store.epicgames.com/en-US/p/rocket-league">Download</a>
+    </div>
+    <img id="home" src="https://rocketleague.media.zestyio.com/rl_neon_nights_2022_key_art_16x9.jpg" style="width: 100%; height: 80vh;">
+    <br>
+
+    <div id="about">
+        <h1 style="text-align: center;">About Rocket League</h1>
+        <h2 style="margin-left: 10%; font-size: 30px;">Adjust the camera settings</h2>
+        <p style="width: 70%; margin-left: 10%; font-size: 20px;">I know what you’re thinking. You came in expecting advice on how to score stylishly and you’ve found us talking about camera settings? I’ll concede this isn’t the most exciting tip but hear us out, camera settings are crucial. Rocket League’s
+            default settings showcase the action ahead decently, but should you wish, the game lets you individually tweak several key aspects, like field of view or distance.</p>
+        <br>
+        <p style="width: 70%; margin-left: 10%; font-size: 20px; margin-right: 10%;">This tip isn’t here to tell you exactly what this should be changed too. You might find other players have listed their own settings online, which is perfectly fine, but everyone has personal preferences. If you’re finding it difficult to land
+            those specific shots or you’d like to see more of the arena, consider giving these a tweak. This could be the difference in securing that winning shot and losing the match. </p>
+        <h2 style="margin-left: 10%; font-size: 30px;">Don’t go ball chasing</h2>
+        <p style="width: 70%; margin-left: 10%; font-size: 20px;">This tip is essentially an extension on my rotation advice and for good reason, ball chasers are a common problem in 2v2 and 3v3 matches. In a game where you’re aiming to score as many goals as possible, it’s naturally tempting to rush in for
+            that hit, and we’ve all made this mistake when starting out as rookies. However, this can ultimately lose you the game and some prime scoring opportunities.</p>
+        <br>
+        <p style="width: 70%; margin-left: 10%; font-size: 20px;">Why? It can put you out of position. When a teammate’s already dribbling up the side, they don’t need you gunning it right behind them, ready to strike if something goes wrong or to take the shot for them. If there’s no one in the middle, a good
+            pass from said teammate suddenly amounts to nothing. By then, you’ve missed a goal scoring opportunity and frustrated teammates in one go. Just remember that you don’t need to take every shot.</p>
+
+    </div>
+    <div id="tutorials">
+        <h1 style="text-align: center;">Tutorials</h1>
+        <iframe width="70%" height="700vh" src="https://www.youtube.com/embed/XhrpsosxUvc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div id="decals">
+        <h1 style="text-align: center;">Decals</h1>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">6/ 1</div>
+                <img src="https://www.ggrecon.com/media/ac3ngewk/rl-yonders-fleece.png?mode=crop&width=682&quality=80&format=webp" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 2</div>
+                <img src="https://www.ggrecon.com/media/gwyenequ/rl-iced.png?mode=crop&width=682&quality=80&format=webp" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 3</div>
+                <img src="https://www.ggrecon.com/media/j0jltxqc/rl-constella.png?mode=crop&width=682&quality=80&format=webp" style="width:100%">
+
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 4</div>
+                <img src="https://www.ggrecon.com/media/ebnlkfwd/rl-s12-silver.png?mode=crop&width=682&quality=80&format=webp" style="width:100%">
+
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 5</div>
+                <img src="https://www.ggrecon.com/media/omlkmfdt/rl-kingtress.png?mode=crop&width=682&quality=80&format=webpg" style="width:100%">
+
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="https://www.ggrecon.com/media/wlinhhlg/rl-nike-fc-2022-multicolor.png?mode=crop&width=682&quality=80&format=webp" style="width:100%">
+
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+        <div class="slideshow-container">
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = slides.length
+                    }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+            </script>
+        </div>
+</body>
+
+</html>
